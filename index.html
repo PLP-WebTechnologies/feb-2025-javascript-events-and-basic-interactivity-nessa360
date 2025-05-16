@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Playground</h1>
+            <p class="subtitle">Explore different JavaScript events and interactions!</p>
+        </header>
+
+        <section id="event-handling" class="section">
+            <h2>Event Handling 🎈</h2>
+            
+            <div class="event-demo">
+                <h3>Button Click</h3>
+                <button id="click-btn" class="btn">Click Me!</button>
+                <p id="click-output" class="output">Click the button to see what happens</p>
+            </div>
+            
+            <div class="event-demo">
+                <h3>Hover Effects</h3>
+                <div id="hover-box" class="interactive-box">Hover over me</div>
+                <p id="hover-output" class="output">Mouse over the box</p>
+            </div>
+            
+            <div class="event-demo">
+                <h3>Keypress Detection</h3>
+                <input type="text" id="key-input" placeholder="Type something...">
+                <p id="key-output" class="output">Press any key in the input field</p>
+            </div>
+            
+            <div class="event-demo">
+                <h3>Secret Action (Double-click)</h3>
+                <div id="secret-box" class="interactive-box">Try double-clicking me</div>
+                <p id="secret-output" class="output">Discover the secret action</p>
+            </div>
+        </section>
+
+        <section id="interactive-elements" class="section">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <div class="interactive-demo">
+                <h3>Color Changer</h3>
+                <div class="color-btns">
+                    <button class="color-btn" data-color="#e74c3c">Red</button>
+                    <button class="color-btn" data-color="#3498db">Blue</button>
+                    <button class="color-btn" data-color="#2ecc71">Green</button>
+                    <button class="color-btn" data-color="#f39c12">Orange</button>
+                </div>
+                <div id="color-display" class="display-box">Click a color button</div>
+            </div>
+            
+            <div class="interactive-demo">
+                <h3>A skin care product</h3>
+                <div class="gallery">
+                    <div class="gallery-main">
+                        <img id="main-image" src="images/Project.png" alt="Gallery Image">
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="interactive-demo">
+                <h3>Tabbed Content</h3>
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <h4>First Tab Content</h4>
+                            <p>This is the content for the first tab. Each tab can contain different information.</p>
+                        </div>
+                        <div id="tab2" class="tab-pane">
+                            <h4>Second Tab Content</h4>
+                            <p>This is the content for the second tab. Tabs are a great way to organize content.</p>
+                        </div>
+                        <div id="tab3" class="tab-pane">
+                            <h4>Third Tab Content</h4>
+                            <p>This is the content for the third tab. Click on different tabs to see their content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form-validation" class="section">
+            <h2>Form Validation 📋✅</h2>
+            
+            <form id="validation-form" class="validation-form">
+                <div class="form-group">
+                    <label for="username">Username <span class="required">*</span></label>
+                    <input type="text" id="username" class="form-input" required>
+                    <div class="feedback"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" class="form-input" required>
+                    <div class="feedback"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" class="form-input" required>
+                    <div class="feedback"></div>
+                    <div class="password-requirements">
+                        <p>Password must contain:</p>
+                        <ul>
+                            <li id="req-length">At least 8 characters</li>
+                            <li id="req-uppercase">At least one uppercase letter</li>
+                            <li id="req-lowercase">At least one lowercase letter</li>
+                            <li id="req-number">At least one number</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password <span class="required">*</span></label>
+                    <input type="password" id="confirm-password" class="form-input" required>
+                    <div class="feedback"></div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </section>
+        
+        <footer>
+            <p>JavaScript Events & Interactive Elements Assignment</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
